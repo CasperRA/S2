@@ -81,3 +81,22 @@ header {
   margin-top: 2px;
   width: 100%;
 }
+
+.season2-intro {
+  margin-top: 7rem;
+  background-image: url(img/soothing.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.season2-intro img {
+  height: 25%;
+  background-color: white;
+}
