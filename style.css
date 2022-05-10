@@ -92,7 +92,6 @@ header {
   margin-top: 7rem;
   background-image: url(img/soothing.gif);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
