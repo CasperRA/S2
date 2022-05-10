@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6ef;
+  font-family: "josefin sans", Arial;
+}
+
+.main-background {
+  background: linear-gradient(
+    45deg,
+    rgba(151, 206, 179, 1) 0%,
+    rgba(151, 206, 179, 1) 20%,
+    rgba(172, 208, 226, 1) 50%,
+    rgba(226, 159, 204, 1) 80%,
+    rgba(226, 159, 204, 1) 100%
+  );
+  min-height: 600px;
+  height: 75vh;
+  width: 100%;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.floating-topleft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  max-width: 40%;
+}
+.floating-logo img {
+  width: 100%;
+}
+.floating-timer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding: 0.25rem;
+  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.floating-topright {
+  display: flex;
+  width: 40%;
+  justify-content: end;
+}
+
+.floating-topright div {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.floating-topright div div {
+  padding: 0rem;
+}
+
+.cart-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.cart-amount p {
+  margin-top: 2px;
+  width: 100%;
+}
