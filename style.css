@@ -45,6 +45,7 @@ header {
   width: 100%;
 }
 .floating-timer {
+  position: fixed;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -55,6 +56,12 @@ header {
   padding-right: 0.75rem;
   letter-spacing: 0.2rem;
   text-align: center;
+  transition-duration: 0.33s;
+  animation-duration: 1s;
+}
+
+.floating-timer-offset {
+  transform: translate(0, 2.5rem);
 }
 
 .floating-topright {
@@ -219,4 +226,20 @@ header {
 .s2-brand-intro .notify-container {
   display: flex;
   justify-content: center;
+}
+
+.s2-brand-images {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.s2-brand-images img {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.s2-brand-images p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
