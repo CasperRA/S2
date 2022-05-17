@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "josefin sans", Arial;
+}
+
+:root {
+  --blue: #acd0e2;
+  --green: #97ceb3;
+  --pink: #e29fcc;
+}
+
+body {
+  background-color: #f6f6ef;
+}
+
+.main-background {
+  background: linear-gradient(
+    45deg,
+    rgba(151, 206, 179, 1) 0%,
+    rgba(151, 206, 179, 1) 20%,
+    rgba(172, 208, 226, 1) 50%,
+    rgba(226, 159, 204, 1) 80%,
+    rgba(226, 159, 204, 1) 100%
+  );
+  min-height: 600px;
+  height: 75vh;
+  width: 100%;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.floating-topleft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  max-width: 40%;
+}
+.floating-logo img {
+  width: 100%;
+}
+.floating-timer {
+  position: fixed;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding: 0.25rem;
+  padding-top: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  transition-duration: 0.33s;
+  animation-duration: 1s;
+}
+
+.floating-timer-offset {
+  transform: translate(0, 2.5rem);
+}
+
+.floating-topright {
+  display: flex;
+  width: 40%;
+  justify-content: end;
+}
+
+.floating-topright div {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.floating-topright div div {
+  padding: 0rem;
+}
+
+.cart-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.cart-amount p {
+  margin-top: 2px;
+  width: 100%;
+}
+
+.season2-intro {
+  margin-top: 7rem;
+  background-image: url(img/soothing.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.season2-intro img {
+  height: 25%;
+  background-color: white;
+}
+
+.floating-menu-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: fixed;
+  width: 250px;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.floating-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid black;
+  padding: 0.75rem;
+}
+
+.floating-menu div {
+  width: 2rem;
+  height: 4px;
+}
+
+.menu-line-g {
+  background-color: var(--green);
+}
+
+.menu-line-b {
+  background-color: var(--blue);
+}
+
+.menu-line-p {
+  background-color: var(--pink);
+}
+
+.floating-menu-tabs {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.floating-menu-tabs a {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.tab-g {
+  color: var(--green);
+}
+
+.tab-b {
+  color: var(--blue);
+}
+
+.tab-p {
+  color: var(--pink);
+}
+
+.notify {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  background: linear-gradient(
+    45deg,
+    rgba(151, 206, 179, 1) 0%,
+    rgba(151, 206, 179, 1) 20%,
+    rgba(172, 208, 226, 1) 50%,
+    rgba(226, 159, 204, 1) 80%,
+    rgba(226, 159, 204, 1) 100%
+  );
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.notify div {
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: 0rem;
+  background-color: white;
+  border: var(--pink) solid 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  color: lightcoral;
+  line-height: 1.5rem;
+}
+
+.s2-brand-container {
+  margin: 2.25rem;
+}
+
+.s2-brand-intro {
+  text-align: center;
+  font-size: 20px;
+}
+
+.s2-brand-intro .notify-container {
+  display: flex;
+  justify-content: center;
+}
+
+.s2-brand-images {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.s2-brand-images img {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.s2-brand-images p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}

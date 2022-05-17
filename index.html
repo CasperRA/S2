@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Season Two</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="main-background">
+      <!-- Header contains timer, logo, log in & cart -->
+      <header>
+        <div class="floating-topleft">
+          <div class="floating-logo">
+            <img src="img/s2mainlogo.png" alt="logos2" />
+          </div>
+          <div id="countdown" class="floating-timer floating-timer-offset">
+            countdown
+          </div>
+        </div>
+        <div class="floating-topright">
+          <div class="login"><a href="https://www.youtube.com">log in</a></div>
+          <div class="cart">
+            <p>cart</p>
+            <div class="cart-amount"><p>0</p></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="season2-intro">
+        <img src="img/s2mainlogo.png" alt="logos2" />
+        <button class="notify">
+          notify
+          <div>x</div>
+        </button>
+      </section>
+    </div>
+
+    <div class="floating-menu-container">
+      <div class="floating-menu" onclick="menutabs()">
+        <div class="menu-line-g"></div>
+        <div class="menu-line-b"></div>
+        <div class="menu-line-p"></div>
+      </div>
+      <div class="floating-menu-tabs" id="menu-tabs">
+        <a class="tab-g" href="">test1</a><a class="tab-b" href="">test2</a
+        ><a class="tab-p" href="">test3</a>
+      </div>
+    </div>
+
+    <section class="s2-brand-container">
+      <div class="s2-brand-intro">
+        <p>
+          season two apperal is a dropbased brand, we continue rotating our
+          clothing line up all year. Be sure to click on "notify" for a
+          notification, around our next drop coming soon. lorem ipsum lorem
+          ipsum lorem ipsum.
+        </p>
+        <div class="notify-container">
+          <button class="notify">
+            notify
+            <div>x</div>
+          </button>
+        </div>
+      </div>
+      <div class="s2-brand-images">
+        <img src="img/whitehood1.jpg" alt="whitehoodie" />
+        <img src="img/whitehood3.jpg" alt="whitehoodie" />
+        <p>
+          season two clothing is sustainable clothing made in portugal by local
+          factories. we ensure that every package sent, is quality checked for
+          the optimal experience. lorem ipsum lorem ipsum lorem ipsum lorem
+          ipsum lorem ipsum lorem ipsum
+        </p>
+        <img src="img/whitehood2.jpg" alt="whitehoodie" />
+      </div>
+    </section>
+  </body>
 </html>
+
+<script src="script.js"></script>
