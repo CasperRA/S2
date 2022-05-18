@@ -250,16 +250,52 @@ header {
 .drop-clothes {
   overflow-x: scroll;
   max-width: 100%;
-  width: 100%;
-  height: 20rem;
+  width: 50rem;
+  height: 25rem;
   background-image: url(img/drops.png);
   background-size: cover;
   background-attachment: local;
   background-position: center;
 }
 
-.drop-clothes div {
-  width: 200%;
-  background-color: #97ceb3;
-  height: 15px;
+.drop-clothes-button-container {
+  width: 50rem;
+  height: 25rem;
+}
+
+.drop-clothes-button-container .drop-clothes-button {
+  width: 6.5rem;
+  position: relative;
+}
+
+.drop-clothes-button-container .drop-clothes-button p {
+  text-align: end;
+  color: white;
+}
+
+.drop-clothes-button-container a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 1.5rem;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+}
+
+.drop-ed1 {
+  left: 11rem;
+  top: 12rem;
+}
+
+.drop-ed2 {
+  left: 22em;
+  top: 13rem;
+}
+
+.drop-ed3 {
+  left: 34rem;
+  top: 8rem;
 }
