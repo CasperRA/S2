@@ -251,7 +251,7 @@ header {
   overflow-x: scroll;
   max-width: 100%;
   width: 50rem;
-  height: 25rem;
+  height: 35rem;
   background-image: url(img/drops.png);
   background-size: cover;
   background-attachment: local;
@@ -260,7 +260,7 @@ header {
 
 .drop-clothes-button-container {
   width: 50rem;
-  height: 25rem;
+  height: 35rem;
 }
 
 .drop-clothes-button-container .drop-clothes-button {
@@ -286,16 +286,16 @@ header {
 }
 
 .drop-ed1 {
-  left: 11rem;
-  top: 12rem;
+  left: 9rem;
+  top: 17rem;
 }
 
 .drop-ed2 {
-  left: 22em;
-  top: 13rem;
+  left: 23em;
+  top: 19rem;
 }
 
 .drop-ed3 {
-  left: 34rem;
-  top: 8rem;
+  left: 38rem;
+  top: 12rem;
 }
