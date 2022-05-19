@@ -8,46 +8,39 @@
     <title>Season Two</title>
   </head>
   <body>
-    <div class="main-background">
-      <!-- Header contains timer, logo, log in & cart -->
-      <header>
-        <div class="floating-topleft">
-          <div class="floating-logo">
-            <img src="img/s2mainlogo.png" alt="logos2" />
-          </div>
-          <div id="countdown" class="floating-timer floating-timer-offset">
-            countdown
-          </div>
+    <header>
+      <div class="floating-topleft">
+        <div class="floating-logo">
+          <a href="index.html"><img src="img/s2mainlogo.png" alt="logos2" /></a>
         </div>
-        <div class="floating-topright">
-          <div class="cart">
-            <p>cart</p>
-            <div class="cart-amount"><p>0</p></div>
-          </div>
+        <div id="countdown" class="floating-timer floating-timer-offset">
+          countdown
         </div>
-      </header>
-
-      <section class="season2-intro">
-        <img src="img/s2mainlogo.png" alt="logos2" />
-        <button class="notify">
-          notify
-          <span>x</span>
-        </button>
-      </section>
-    </div>
-
-    <div class="floating-menu-container">
-      <div class="floating-menu" onclick="menutabs()">
-        <div class="menu-line-g"></div>
-        <div class="menu-line-b"></div>
-        <div class="menu-line-p"></div>
       </div>
-      <div class="floating-menu-tabs" id="menu-tabs">
-        <a class="tab-g" href="drops.html">drops</a>
-        <a class="tab-b" href="">test2</a>
-        <a class="tab-p" href="">test3</a>
+      <div class="floating-topright">
+        <div class="cart">
+          <p>cart</p>
+          <div class="cart-amount"><p>0</p></div>
+        </div>
       </div>
-    </div>
+    </header>
+
+    <section class="drop-clothes">
+      <div class="drop-clothes-button-container">
+        <div class="drop-clothes-button drop-ed1">
+          <p>ed. 001</p>
+          <a href="ed001.html">view</a>
+        </div>
+        <div class="drop-clothes-button drop-ed2">
+          <p>ed. 002</p>
+          <a href="ed002.html">view</a>
+        </div>
+        <div class="drop-clothes-button drop-ed3">
+          <p>ed. 003</p>
+          <a href="ed003.html">view</a>
+        </div>
+      </div>
+    </section>
 
     <section class="s2-brand-container">
       <div class="s2-brand-intro">
@@ -76,6 +69,18 @@
         <img src="img/whitehood2.jpg" alt="whitehoodie" />
       </div>
     </section>
+    <div class="floating-menu-container">
+      <div class="floating-menu" onclick="menutabs()">
+        <div class="menu-line-g"></div>
+        <div class="menu-line-b"></div>
+        <div class="menu-line-p"></div>
+      </div>
+      <div class="floating-menu-tabs" id="menu-tabs">
+        <a class="tab-g" href="drops.html">drops</a>
+        <a class="tab-b" href="">test2</a>
+        <a class="tab-p" href="">test3</a>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
