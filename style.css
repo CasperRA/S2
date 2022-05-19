@@ -299,3 +299,100 @@ header {
   left: 38rem;
   top: 12rem;
 }
+
+.ed-clotes-container {
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.ed-clotes-container img {
+  width: 100%;
+}
+
+.ed-clothes-title {
+  font-size: 2em;
+  margin-top: 1rem;
+}
+
+.ed-clothes-price {
+  margin-top: 0.5rem;
+  font-size: 1.75em;
+  font-weight: 300;
+}
+
+.ed-clothes-size {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  font-size: 1.5em;
+}
+
+.ed-clothes-size h3 {
+  font-weight: 300;
+}
+
+.ed-clothes-size-buttons .highlight {
+  font-weight: 600;
+}
+
+.ed-clothes-size-buttons button {
+  font-size: 1.5rem;
+  font-weight: 300;
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ed-clothes-quantity {
+  display: flex;
+  margin-top: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ed-clothes-quantity h4 {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.ed-clothes-quantity-selector {
+  display: flex;
+  font-size: 1.25rem;
+  border: 1px solid #585858;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ed-clothes-quantity-selector button {
+  border: none;
+  font-size: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background: none;
+}
+
+.ed-clothes-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.ed-clothes-reserve {
+  border: none;
+  background-color: var(--blue);
+  width: 20rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.5rem;
+}
+
+.ed-clothes-description-text {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
