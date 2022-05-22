@@ -524,3 +524,7 @@ header {
 .glry-bg button img {
   width: 65%;
 }
+
+.checkmark {
+  color: green;
+}

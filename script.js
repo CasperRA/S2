@@ -40,6 +40,23 @@ let x = setInterval(function () {
     document.getElementById("countdown").innerHTML = "live";
   }
 }, 1000);
+let notified = true;
+let notifyspans = document.getElementsByClassName("notify-mark");
+function checkNotify() {
+  if (notified == true) {
+    [].slice.call(notifyspans).forEach(function (span) {
+      span.innerHTML = "✓";
+      span.classList.add("checkmark");
+    });
+  }
+  if (notified !== true) {
+    [].slice.call(notifyspans).forEach(function (span) {
+      span.innerHTML = "x";
+    });
+  }
+}
+
+window.onload = checkNotify;
 
 function testScroll(ev) {
   if (window.pageYOffset > 50) {
