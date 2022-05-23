@@ -202,7 +202,7 @@ header {
   font-weight: bold;
   color: white;
 }
-.notify span {
+.notify-mark {
   position: absolute;
   margin-left: 10rem;
   margin-top: 0rem;
@@ -508,6 +508,9 @@ header {
 }
 
 .glry-bg button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     45deg,
     rgba(151, 206, 179, 1) 0%,
@@ -526,5 +529,9 @@ header {
 }
 
 .checkmark {
-  color: green;
+  color: var(--green);
+}
+
+.hidden {
+  display: none !important;
 }

@@ -40,23 +40,6 @@ let x = setInterval(function () {
     document.getElementById("countdown").innerHTML = "live";
   }
 }, 1000);
-let notified = true;
-let notifyspans = document.getElementsByClassName("notify-mark");
-function checkNotify() {
-  if (notified == true) {
-    [].slice.call(notifyspans).forEach(function (span) {
-      span.innerHTML = "✓";
-      span.classList.add("checkmark");
-    });
-  }
-  if (notified !== true) {
-    [].slice.call(notifyspans).forEach(function (span) {
-      span.innerHTML = "x";
-    });
-  }
-}
-
-window.onload = checkNotify;
 
 function testScroll(ev) {
   if (window.pageYOffset > 50) {
@@ -69,3 +52,87 @@ function testScroll(ev) {
   }
 }
 window.onscroll = testScroll;
+
+let notifyspans = document.getElementsByClassName("notify-mark");
+let notified = false;
+
+let storedNotify = localStorage.getItem("getNotify");
+
+console.log(storedNotify);
+
+function toggleNotify() {
+  console.log("toggleNotify");
+  console.log(storedNotify);
+  if (storedNotify == "on") {
+    console.log("toggleoff");
+    localStorage.setItem("getNotify", "off");
+    storedNotify = localStorage.getItem("getNotify");
+    checkNotify();
+  } else if (storedNotify == "off" || storedNotify == null) {
+    console.log("toggleon");
+    localStorage.setItem("getNotify", "on");
+    storedNotify = localStorage.getItem("getNotify");
+    checkNotify();
+  }
+}
+
+function checkNotify() {
+  console.log(storedNotify);
+  if (storedNotify == "on") {
+    [].slice.call(notifyspans).forEach(function (span) {
+      span.innerHTML = "✓";
+      span.classList.add("checkmark");
+    });
+  } else if (storedNotify == "off") {
+    [].slice.call(notifyspans).forEach(function (span) {
+      span.innerHTML = "x";
+      span.classList.remove("checkmark");
+    });
+  }
+  let galleryArray = galleryNotify.split(",");
+  console.log(galleryArray);
+  for (let i = 0; i < galleryArray.length; i++) {
+    document.getElementById("noti" + galleryArray[i]).classList.add("hidden");
+    document
+      .getElementById("check" + galleryArray[i])
+      .classList.remove("hidden");
+  }
+}
+
+window.onload = checkNotify;
+
+let galleryNotify = localStorage.getItem("notiClothes");
+console.log(galleryNotify);
+let galleryValues = [];
+
+galleryValues = galleryNotify.split(",");
+
+console.log(galleryValues);
+
+function galleryClothesNotify(x) {
+  for (let i = 0; i < galleryValues.length; i++) {
+    if (galleryValues[i] == x) {
+      galleryValues.splice(i, 1);
+      localStorage.setItem("notiClothes", galleryValues);
+      galleryNotify = localStorage.getItem("notiClothes");
+      document.getElementById("noti" + x).classList.remove("hidden");
+      document.getElementById("check" + x).classList.add("hidden");
+      return;
+    }
+  }
+  galleryValues.push(x);
+  localStorage.setItem("notiClothes", galleryValues);
+  galleryNotify = localStorage.getItem("notiClothes");
+  loadNotiClothes();
+}
+
+function loadNotiClothes() {
+  let galleryArray = galleryNotify.split(",");
+  console.log(galleryArray);
+  for (let i = 0; i < galleryArray.length; i++) {
+    document.getElementById("noti" + galleryArray[i]).classList.add("hidden");
+    document
+      .getElementById("check" + galleryArray[i])
+      .classList.remove("hidden");
+  }
+}
