@@ -59,10 +59,15 @@ header {
   text-align: center;
   transition-duration: 0.33s;
   animation-duration: 1s;
+  line-height: 1.75rem;
 }
 
 .floating-timer-offset {
   transform: translate(0, 2.5rem);
+}
+
+.countdown-live {
+  color: var(--green);
 }
 
 .floating-topright {
@@ -174,6 +179,14 @@ header {
   color: var(--green);
 }
 
+.tab-g:hover {
+  color: white;
+  background-color: var(--green);
+}
+.tab-g:active {
+  color: white;
+  background-color: var(--green);
+}
 .tab-b {
   color: var(--blue);
 }
@@ -213,6 +226,57 @@ header {
   border-radius: 100%;
   color: lightcoral;
   line-height: 1.5rem;
+}
+
+.notify-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.notify-modal-darken {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notify-modal-container {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid black;
+  width: 70%;
+  height: 50%;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 4;
+}
+
+.notify-modal-container h2 {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.notify-modal-container input {
+  width: 95%;
+  height: 1.5rem;
+  padding: 0.25rem;
 }
 
 .s2-brand-container {
@@ -264,7 +328,7 @@ header {
 }
 
 .drop-clothes-button-container .drop-clothes-button {
-  width: 6.5rem;
+  width: 6.75rem;
   position: relative;
 }
 
@@ -278,7 +342,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 6rem;
+  width: 6.5rem;
   height: 1.5rem;
   text-decoration: none;
   color: white;
