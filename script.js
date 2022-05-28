@@ -69,14 +69,15 @@ let storedEmail = localStorage.getItem("getEmail");
 let userEmail = "";
 
 function toggleModalNotify() {
-  // Checks if user has notifications on, if so, disables notifications & clears email, instead of opening modal
+  // Checks if user has notifications on, if so, disables notifications & clears email, instead of opening modal.
   if (storedNotify == "on") {
     localStorage.setItem("getNotify", "off");
     storedNotify = localStorage.getItem("getNotify");
     localStorage.setItem("getEmail", "");
     checkNotify();
   }
-  // toggles between shown and hidden modal
+
+  // Toggles between shown and hidden modal.
   else {
     if (
       document.getElementById("notify-modal").style.display === "none" ||
@@ -89,7 +90,7 @@ function toggleModalNotify() {
   }
 }
 
-// Saves the inputted email, if input is empty, it just closes the modal
+// Saves the inputted email, if input is empty, it just closes the modal.
 function saveEmail() {
   userEmail = document.getElementById("notify-email").value;
   if (userEmail === "") {
@@ -107,7 +108,7 @@ function saveEmail() {
 
 console.log(storedEmail);
 
-// check for notifications and changes the innerhtml depending on enabled or disabled, with ✓ or x
+// check for notifications and changes the innerhtml depending on enabled or disabled, with ✓ or x.
 function checkNotify() {
   if (storedNotify == "on") {
     [].slice.call(notifyspans).forEach(function (span) {
@@ -121,7 +122,7 @@ function checkNotify() {
     });
   }
 
-  // Checks for the gallery, which of the items you have enabled notifications on and then swaps a picture to a ✓ if enabled
+  // Checks for the gallery, which of the items you have enabled notifications on and then swaps a picture to a ✓ if enabled.
   let galleryArray = galleryNotify.split(",");
   console.log(galleryArray);
 
@@ -134,7 +135,7 @@ function checkNotify() {
     }
   }
 }
-
+// Checks notifications on load
 window.onload = checkNotify;
 
 let galleryNotify = localStorage.getItem("notiClothes");
@@ -142,6 +143,7 @@ let galleryValues = [];
 
 galleryValues = galleryNotify.split(",");
 
+// adds or removes notifications from gallery clothes
 function galleryClothesNotify(x) {
   for (let i = 0; i < galleryValues.length; i++) {
     if (galleryValues[i] == x) {
