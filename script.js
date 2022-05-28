@@ -13,8 +13,9 @@ function menutabs() {
     }, 200);
   }
 }
+
 // Set a drop date & time
-let nextDropDate = new Date("Jun 07, 2022 12:00:00").getTime();
+let nextDropDate = new Date("May 30, 2022 12:00:00").getTime();
 
 // Runs the function every second (interval is set to 1000 miliseconds)
 let x = setInterval(function () {
@@ -68,8 +69,8 @@ window.onscroll = checkScrollTimer;
 let notifyspans = document.getElementsByClassName("notify-mark");
 let notified = false;
 
+// stored localfiles containing notifications and email
 let storedNotify = localStorage.getItem("getNotify");
-
 let storedEmail = localStorage.getItem("getEmail");
 
 let userEmail = "";
@@ -144,6 +145,7 @@ function checkNotify() {
 // Checks notifications on load
 window.onload = checkNotify;
 
+// localstorage of notifications on the gallery
 let galleryNotify = localStorage.getItem("notiClothes");
 let galleryValues = [];
 
@@ -167,6 +169,7 @@ function galleryClothesNotify(x) {
   loadNotiClothes();
 }
 
+// changes the symbol
 function loadNotiClothes() {
   let galleryArray = galleryNotify.split(",");
   console.log(galleryArray);
