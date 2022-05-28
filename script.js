@@ -1,10 +1,16 @@
 let tabs = document.getElementById("menu-tabs");
 
 function menutabs() {
-  if (tabs.style.display === "none") {
+  if (tabs.style.display === "none" || tabs.style.display === "") {
     tabs.style.display = "flex";
+    setTimeout(function () {
+      tabs.style.opacity = "100%";
+    }, 10);
   } else {
-    tabs.style.display = "none";
+    tabs.style.opacity = "0%";
+    setTimeout(function () {
+      tabs.style.display = "none";
+    }, 200);
   }
 }
 // Set a drop date & time
