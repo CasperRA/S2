@@ -29,7 +29,7 @@
 
       <section class="season2-intro">
         <img src="img/s2mainlogo.png" alt="logos2" />
-        <button class="notify" onclick="toggleNotify()">
+        <button class="notify" onclick="toggleModalNotify()">
           notify
           <span class="notify-mark">x</span>
         </button>
@@ -49,6 +49,20 @@
       </div>
     </div>
 
+    <div id="notify-modal" class="notify-modal">
+      <div onclick="toggleModalNotify()" class="notify-modal-darken"></div>
+      <div class="notify-modal-container">
+        <h2>to get notifed, please insert your email here:</h2>
+        <input
+          type="text"
+          name="notify-email"
+          placeholder="email"
+          id="notify-email"
+        />
+        <button class="notify" onclick="saveEmail()">ok</button>
+      </div>
+    </div>
+
     <section class="s2-brand-container">
       <div class="s2-brand-intro">
         <p>
@@ -58,7 +72,7 @@
           ipsum lorem ipsum.
         </p>
         <div class="notify-container">
-          <button class="notify" onclick="toggleNotify()">
+          <button class="notify" onclick="toggleModalNotify()">
             notify
             <span class="notify-mark">x</span>
           </button>
