@@ -67,7 +67,6 @@ function checkScrollTimer() {
 window.onscroll = checkScrollTimer;
 
 let notifyspans = document.getElementsByClassName("notify-mark");
-let notified = false;
 
 // stored localfiles containing notifications and email
 let storedNotify = localStorage.getItem("getNotify");
