@@ -223,6 +223,11 @@ header {
   font-weight: bold;
   color: white;
 }
+
+.notify:hover {
+  transform: scale(1.2);
+}
+
 .notify-mark {
   position: absolute;
   margin-left: 10rem;
