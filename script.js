@@ -128,7 +128,7 @@ function checkNotify() {
     });
   }
 
-  if (storedNotify == "on") {
+  if (galleryNotify !== null) {
     // Checks for the gallery, which of the items you have enabled notifications on and then swaps a picture to a ✓ if enabled.
     let galleryArray = galleryNotify.split(",");
     console.log(galleryArray);
