@@ -128,16 +128,20 @@ function checkNotify() {
     });
   }
 
-  // Checks for the gallery, which of the items you have enabled notifications on and then swaps a picture to a ✓ if enabled.
-  let galleryArray = galleryNotify.split(",");
-  console.log(galleryArray);
+  if (storedNotify == "on") {
+    // Checks for the gallery, which of the items you have enabled notifications on and then swaps a picture to a ✓ if enabled.
+    let galleryArray = galleryNotify.split(",");
+    console.log(galleryArray);
 
-  for (let i = 0; i < galleryArray.length; i++) {
-    if (document.getElementById("noti" + galleryArray[i]) !== null) {
-      document.getElementById("noti" + galleryArray[i]).classList.add("hidden");
-      document
-        .getElementById("check" + galleryArray[i])
-        .classList.remove("hidden");
+    for (let i = 0; i < galleryArray.length; i++) {
+      if (document.getElementById("noti" + galleryArray[i]) !== null) {
+        document
+          .getElementById("noti" + galleryArray[i])
+          .classList.add("hidden");
+        document
+          .getElementById("check" + galleryArray[i])
+          .classList.remove("hidden");
+      }
     }
   }
 }
