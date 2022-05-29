@@ -224,7 +224,7 @@ header {
   color: white;
 }
 
-.notify:hover {
+.notify:active {
   transform: scale(1.2);
 }
 
