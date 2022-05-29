@@ -15,7 +15,7 @@ function menutabs() {
 }
 
 // Set a drop date & time
-let nextDropDate = new Date("May 30, 2022 12:00:00").getTime();
+let nextDropDate = new Date("Jun 30, 2022 12:00:00").getTime();
 
 // Runs the function every second (interval is set to 1000 miliseconds)
 let x = setInterval(function () {
